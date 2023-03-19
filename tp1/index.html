@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>IDQ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+  <link href="../tp4/styles1.css" type="text/css" rel="stylesheet"/>
+  <link href="../tp4/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+  
+  
+  <script type='text/javascript' src="main.js"> </script>
+
+</head>
+<body>
+
+
+
+<div class="container">
+          
+  <p style="margin-top:20px;">&nbsp;</p>
+  <div style="width:80%; margin: 0px auto;">
+
+  <div class="row">
+    <div class="col-7">
+      <h1 style="padding-bottom: 30px; padding-top:15px;">Liste des utilisateurs</h1>
+    </div>
+    <div class="col-3">
+      <br/>
+      <input type="text"  id="filtre" placeholder="FILTRE" onkeypress="filtrage();" onkeyup="filtrage();"/>
+      <!-- <button type="submit" class="boutton" name="enregistrer">creer</button> -->
+    </div>
+    <div class="col-2">
+    <br/>
+    <a href="../" style="font-size:32px; color:green;"><i class="icon-home"></i></a>
+    </div>
+  </div>
+
+  <div id="tableDonnees">
+
+  </div>
+
+  <script type='text/javascript'> 
+    //executer remplir tableau de données
+    drawTableDonneesSync();
+  </script>
+
+
+</div>
+
+</body>
+</html>
